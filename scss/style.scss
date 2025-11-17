@@ -1,0 +1,33 @@
+@use 'button';
+@use 'variables' as v;
+body {
+    background: #343434;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: #c8894a;
+    font-family: v.$disFont;
+    text-shadow: 5px 10px 0px #262525;
+    text-align: center;
+    font-size: clamp(4rem, 8vw, 5rem);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+
+    
+}
+
+@media (max-width:425px){
+    body{
+        padding: 20px;
+    }
+    .container{
+        flex-shrink: 2;
+    }
+}
